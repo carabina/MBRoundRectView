@@ -1,6 +1,6 @@
 # MBRoundRectView
 
-This is UIView allow you create rounded rect corner for your at any potion like top left, bottom left, top right, bottom right.
+This UIView allows to create rounded rect corner view at any position like top left, bottom left, top right, bottom right.
 
 ![Image](Images/iPhone2.png) ![Image](Images/iPhone1.png) ![Image](Images/iPhone.png) ![Image](Images/iPhone3.png) ![Image](Images/iPhone4.png)
 
