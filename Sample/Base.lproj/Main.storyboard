@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4z3-v7-90o" customClass="MBRoundRectView" customModule="Sample" customModuleProvider="target">
+                                <rect key="frame" x="16" y="283.5" width="343" height="100"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJc-dR-aoc">
+                                        <rect key="frame" x="176.5" y="10" width="156.5" height="80"/>
+                                        <color key="backgroundColor" red="0.89349117519999999" green="1" blue="0.1932857815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z64-w5-w2F">
+                                        <rect key="frame" x="10" y="10" width="156.5" height="80"/>
+                                        <color key="backgroundColor" red="0.89349117519999999" green="1" blue="0.1932857815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.58566475100000004" green="1" blue="0.59833101789999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="fJc-dR-aoc" secondAttribute="trailing" constant="10" id="3W6-HG-Fwi"/>
+                                    <constraint firstAttribute="bottom" secondItem="z64-w5-w2F" secondAttribute="bottom" constant="10" id="Ci6-FG-ew3"/>
+                                    <constraint firstItem="fJc-dR-aoc" firstAttribute="top" secondItem="4z3-v7-90o" secondAttribute="top" constant="10" id="EbY-gq-epg"/>
+                                    <constraint firstItem="fJc-dR-aoc" firstAttribute="height" secondItem="z64-w5-w2F" secondAttribute="height" id="JGb-bs-eCd"/>
+                                    <constraint firstAttribute="bottom" secondItem="fJc-dR-aoc" secondAttribute="bottom" constant="10" id="Mcs-As-6gy"/>
+                                    <constraint firstAttribute="height" constant="100" id="WWW-Hr-42K"/>
+                                    <constraint firstItem="z64-w5-w2F" firstAttribute="top" secondItem="4z3-v7-90o" secondAttribute="top" constant="10" id="gOP-ws-cMQ"/>
+                                    <constraint firstItem="fJc-dR-aoc" firstAttribute="width" secondItem="z64-w5-w2F" secondAttribute="width" id="iNs-85-Ruc"/>
+                                    <constraint firstItem="z64-w5-w2F" firstAttribute="leading" secondItem="4z3-v7-90o" secondAttribute="leading" constant="10" id="jB3-05-Na4"/>
+                                    <constraint firstItem="fJc-dR-aoc" firstAttribute="leading" secondItem="z64-w5-w2F" secondAttribute="trailing" constant="10" id="uCY-uj-fRz"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VsA-vl-Hmf">
+                                <rect key="frame" x="16" y="222.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="leftTopSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="Tfx-LN-zbF"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aTg-YK-27x">
+                                <rect key="frame" x="310" y="222" width="51" height="31"/>
+                                <connections>
+                                    <action selector="rightTopSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="03e-Di-TRC"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9GV-Vh-7Uo">
+                                <rect key="frame" x="16" y="413.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="leftBottomSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="Zp7-on-ARi"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YWX-E4-tGg">
+                                <rect key="frame" x="310" y="413.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="rightBottomSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="83U-vC-xlB"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4z3-v7-90o" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1z4-64-ERX"/>
+                            <constraint firstItem="9GV-Vh-7Uo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4if-KZ-Mm6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YWX-E4-tGg" secondAttribute="trailing" id="DXk-5u-zQe"/>
+                            <constraint firstItem="4z3-v7-90o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="WDM-3A-HeN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4z3-v7-90o" secondAttribute="trailing" id="Zh9-qn-6bZ"/>
+                            <constraint firstItem="YWX-E4-tGg" firstAttribute="top" secondItem="4z3-v7-90o" secondAttribute="bottom" constant="30" id="dDg-G3-9OY"/>
+                            <constraint firstItem="9GV-Vh-7Uo" firstAttribute="top" secondItem="4z3-v7-90o" secondAttribute="bottom" constant="30" id="iyH-LF-ncl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aTg-YK-27x" secondAttribute="trailing" id="rt9-Jz-tnh"/>
+                            <constraint firstItem="4z3-v7-90o" firstAttribute="top" secondItem="aTg-YK-27x" secondAttribute="bottom" constant="30" id="uFG-kD-jeP"/>
+                            <constraint firstItem="VsA-vl-Hmf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uHV-ip-lRX"/>
+                            <constraint firstItem="4z3-v7-90o" firstAttribute="top" secondItem="VsA-vl-Hmf" secondAttribute="bottom" constant="30" id="wcN-Xe-TPm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cornerView" destination="4z3-v7-90o" id="Lwm-ie-yxf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
