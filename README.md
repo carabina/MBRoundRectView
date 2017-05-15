@@ -2,7 +2,7 @@
 
 This is UIView allow you create rounded rect corner for your at any potion like top left, bottom left, top right, bottom right.
 
-![Image](iPhone2.png) ![Image](iPhone1.png) ![Image](iPhone.png) ![Image](iPhone3.png) ![Image](iPhone4.png)
+![Image](Images/iPhone2.png) ![Image](Images/iPhone1.png) ![Image](Images/iPhone.png) ![Image](Images/iPhone3.png) ![Image](Images/iPhone4.png)
 
 ## Installation
 
@@ -32,7 +32,7 @@ $ pod install
 
 It is very simple and easy to use. It is designed in such way that you can view the actual layout in XIB itself. You can make all or any corner as round rect in XIB itself. Just assign *[MBRoundRectView](Source/MBRoundRectView.swift)* to your view and you are ready to use it.
 
-![image](layout1.png)  ![image](layout2.png)
+![image](Images/layout1.png)  ![image](Images/layout2.png)
 
 
 ##Licence
